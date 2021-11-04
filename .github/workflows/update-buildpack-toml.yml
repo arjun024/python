@@ -21,6 +21,9 @@ jobs:
 
     - name: Update buildpack.toml
       uses: paketo-buildpacks/github-config/actions/buildpack/update@configurable-update-buildpack-action
+      with:
+        buildpack_toml_path: buildpack-new.toml
+        package_toml_path: package-new.toml
 
     - name: Commit
       id: commit

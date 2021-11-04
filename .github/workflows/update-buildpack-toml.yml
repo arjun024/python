@@ -20,7 +20,7 @@ jobs:
         branch: automation/buildpack.toml/update
 
     - name: Update buildpack.toml
-      uses: paketo-buildpacks/github-config/actions/buildpack/update@main
+      uses: paketo-buildpacks/github-config/actions/buildpack/update@configurable-update-buildpack-action
 
     - name: Commit
       id: commit
